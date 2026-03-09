@@ -13,7 +13,7 @@ export default function FinalCTA() {
           style={{ background: '#6B9E78' }}
         />
 
-        <div className="text-6xl mb-6 leading-none select-none relative" aria-hidden="true">🐿️</div>
+        <img src="/stash.png" alt="Stash" className="w-28 h-28 object-contain mb-6 relative drop-shadow-lg" />
 
         <h2 className="font-display font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 relative">
           Ready to actually know<br />where your money goes?

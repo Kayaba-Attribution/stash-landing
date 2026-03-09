@@ -27,11 +27,8 @@ export default function Hero() {
 
           {/* Copy */}
           <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <span className="inline-flex items-center gap-2 bg-terracotta/10 text-terracotta rounded-full px-3.5 py-1.5 text-sm font-semibold mb-6 border border-terracotta/20">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-terracotta opacity-60" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-terracotta" />
-              </span>
+            <span className="inline-flex items-center gap-2 bg-terracotta/10 text-terracotta rounded-full pl-1.5 pr-3.5 py-1 text-sm font-semibold mb-6 border border-terracotta/20">
+              <img src="/stash.png" alt="Stash" className="w-6 h-6 object-contain rounded-full bg-white" />
               Meet Stash, your expense pal
             </span>
 

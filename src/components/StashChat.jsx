@@ -40,12 +40,7 @@ const CYCLE_MS = 11000
 function TypingIndicator() {
   return (
     <div className="flex items-end gap-2 animate-slide-up">
-      <div
-        className="w-6 h-6 rounded-full flex items-center justify-center text-xs flex-shrink-0"
-        style={{ background: '#2B5278' }}
-      >
-        🐿️
-      </div>
+      <img src="/stash.png" alt="Stash" className="w-6 h-6 rounded-full object-contain flex-shrink-0 bg-white" />
       <div
         className="rounded-2xl rounded-bl-sm px-3 py-2.5 flex gap-1 items-center"
         style={{ background: '#182533' }}
@@ -70,12 +65,7 @@ function Message({ msg, cycleKey }) {
       className={`flex items-end gap-2 animate-slide-up ${isUser ? 'justify-end' : 'justify-start'}`}
     >
       {!isUser && (
-        <div
-          className="w-6 h-6 rounded-full flex items-center justify-center text-xs flex-shrink-0 mb-0.5"
-          style={{ background: '#2B5278' }}
-        >
-          🐿️
-        </div>
+        <img src="/stash.png" alt="Stash" className="w-6 h-6 rounded-full object-contain flex-shrink-0 mb-0.5 bg-white" />
       )}
       <div
         className="rounded-2xl px-3 py-2 max-w-[195px] text-xs leading-relaxed"
@@ -170,12 +160,7 @@ export default function StashChat() {
           className="flex items-center gap-3 px-4 py-2.5"
           style={{ background: '#17212B' }}
         >
-          <div
-            className="w-9 h-9 rounded-full flex items-center justify-center text-lg flex-shrink-0"
-            style={{ background: 'linear-gradient(135deg, #2B5278, #1a3a5c)' }}
-          >
-            🐿️
-          </div>
+          <img src="/stash.png" alt="Stash" className="w-9 h-9 rounded-full object-contain flex-shrink-0 bg-white" />
           <div>
             <div className="text-white text-sm font-semibold font-display leading-tight">Stash</div>
             <div className="text-white/40 text-[11px]">expense tracker · online</div>

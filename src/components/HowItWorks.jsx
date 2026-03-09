@@ -31,12 +31,7 @@ function ChatBubble({ bubble }) {
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
       {!isUser && (
-        <div
-          className="w-5 h-5 rounded-full flex items-center justify-center text-[10px] flex-shrink-0 mr-1.5 mt-0.5"
-          style={{ background: '#2B5278' }}
-        >
-          🐿️
-        </div>
+        <img src="/stash.png" alt="Stash" className="w-5 h-5 rounded-full object-contain flex-shrink-0 mr-1.5 mt-0.5 bg-white" />
       )}
       <div
         className="rounded-2xl px-3 py-2 max-w-[180px] text-xs leading-relaxed"

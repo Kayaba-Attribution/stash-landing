@@ -17,7 +17,7 @@ export default function Nav() {
     }`}>
       <div className="max-w-6xl mx-auto px-6 pt-6 pb-4 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
-          <span className="text-2xl leading-none">🐿️</span>
+          <img src="/stash.png" alt="Stash" className="w-8 h-8 object-contain" />
           <span className="font-display font-extrabold text-slate text-xl tracking-tight">Stash</span>
         </div>
         <a
