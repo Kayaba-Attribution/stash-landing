@@ -16,10 +16,7 @@ export default function Nav() {
       scrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
     }`}>
       <div className="max-w-6xl mx-auto px-6 pt-6 pb-4 flex items-center justify-between">
-        <div className="flex items-center gap-2.5">
-          <img src="/stash.png" alt="Stash" className="w-8 h-8 object-contain" />
-          <span className="font-display font-extrabold text-slate text-xl tracking-tight">Stash</span>
-        </div>
+        <span className="font-display font-black text-slate text-2xl tracking-tight">Stash</span>
         <a
           href={BOT_URL}
           target="_blank"
