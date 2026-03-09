@@ -27,8 +27,8 @@ export default function Hero() {
 
           {/* Copy */}
           <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-            {/* Mascot */}
-            <img src="/stash.png" alt="Stash" className="w-24 h-24 object-contain mb-4 drop-shadow-md" />
+            {/* Mascot — mobile only (desktop version lives above the phone) */}
+            <img src="/stash.png" alt="Stash" className="lg:hidden w-24 h-24 object-contain mb-4 drop-shadow-md" />
 
             <span className="inline-flex items-center gap-2 bg-terracotta/10 text-terracotta rounded-full px-3.5 py-1.5 text-sm font-semibold mb-5 border border-terracotta/20">
               <span className="relative flex h-2 w-2">
@@ -69,8 +69,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Chat mockup */}
-          <div className="flex-shrink-0 flex justify-center lg:mt-4">
+          {/* Chat mockup — desktop shows mascot above phone */}
+          <div className="flex-shrink-0 flex flex-col items-center gap-3 lg:mt-2">
+            <img src="/stash.png" alt="Stash" className="hidden lg:block w-28 h-28 object-contain drop-shadow-md" />
             <StashChat />
           </div>
 
