@@ -5,26 +5,31 @@ const BOT_URL = 'https://t.me/your_bot_here'
 
 const FREE_FEATURES = [
   '30 expenses/month',
-  'Monthly spending summary',
+  'Current month query history',
   '1 total budget',
   'Daily check-ins from Stash',
+  'Streak tracking',
+  'Weekly digest (first month)',
 ]
 
 const PRO_FEATURES = [
   'Unlimited expenses',
+  '12-month query history',
   'Per-category budgets',
   'Savings goals',
-  'Top merchants report',
   'Custom categories',
-  'CSV export',
-  'All query types',
+  'Weekly digest',
+  'Spending pattern insights',
   'Daily check-ins from Stash',
 ]
 
-const FAMILY_FEATURES = [
+const ULTRA_FEATURES = [
   'Everything in Pro',
-  'Up to 5 users',
-  'Shared household view',
+  'Unlimited query history',
+  'Recurring expense auto-logging',
+  'Spending alerts',
+  'CSV export',
+  'Custom reminder time',
 ]
 
 const FAQS = [
@@ -113,7 +118,7 @@ export default function Pricing() {
               rel="noopener noreferrer"
               className="block text-center border border-slate/20 text-slate rounded-full px-6 py-2.5 text-sm font-semibold hover:border-slate/40 transition-colors"
             >
-              Meet Stash
+              Open Stash in Telegram
             </a>
           </div>
 
@@ -127,7 +132,8 @@ export default function Pricing() {
               <span className="font-display font-bold text-white text-4xl">$4.99</span>
               <span className="text-white/50 text-sm mb-1.5">/mo</span>
             </div>
-            <p className="text-white/50 text-sm mb-6">billed monthly</p>
+            <p className="text-white/40 text-sm mb-1 line-through">Usually $9.99/mo</p>
+            <p className="text-terracotta text-xs font-semibold mb-5">50% off — launch pricing</p>
             <ul className="space-y-2.5 mb-8">
               {PRO_FEATURES.map(f => (
                 <li key={f} className="flex items-start gap-2.5 text-sm text-white/80">
@@ -146,16 +152,17 @@ export default function Pricing() {
             </a>
           </div>
 
-          {/* Family */}
+          {/* Ultra */}
           <div className="bg-white rounded-2xl p-8 border border-slate/10">
-            <p className="font-display font-semibold text-slate text-lg mb-1">Family</p>
+            <p className="font-display font-semibold text-slate text-lg mb-1">Ultra</p>
             <div className="flex items-end gap-1 mb-1">
-              <span className="font-display font-bold text-slate text-4xl">$9.99</span>
+              <span className="font-display font-bold text-slate text-4xl">$6.99</span>
               <span className="text-slate-muted text-sm mb-1.5">/mo</span>
             </div>
-            <p className="text-slate-muted text-sm mb-6">up to 5 users</p>
+            <p className="text-slate-muted/60 text-sm mb-1 line-through">Usually $13.99/mo</p>
+            <p className="text-sage-dark text-xs font-semibold mb-5">50% off — launch pricing</p>
             <ul className="space-y-2.5 mb-8">
-              {FAMILY_FEATURES.map(f => <FeatureItem key={f} text={f} color="text-sage" />)}
+              {ULTRA_FEATURES.map(f => <FeatureItem key={f} text={f} color="text-sage" />)}
             </ul>
             <a
               href={BOT_URL}
@@ -163,7 +170,7 @@ export default function Pricing() {
               rel="noopener noreferrer"
               className="block text-center border border-slate/20 text-slate rounded-full px-6 py-2.5 text-sm font-semibold hover:border-slate/40 transition-colors"
             >
-              Get Family
+              Go Ultra
             </a>
           </div>
         </div>

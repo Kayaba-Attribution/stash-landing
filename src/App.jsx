@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import ProblemStrip from './components/ProblemStrip'
 import HowItWorks from './components/HowItWorks'
 import Features from './components/Features'
+import Reviews from './components/Reviews'
 import Pricing from './components/Pricing'
 import FinalCTA from './components/FinalCTA'
 
@@ -14,6 +15,7 @@ export default function App() {
       <ProblemStrip />
       <HowItWorks />
       <Features />
+      <Reviews />
       <Pricing />
       <FinalCTA />
     </div>
